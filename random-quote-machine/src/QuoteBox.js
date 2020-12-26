@@ -7,7 +7,7 @@ export default class QuoteBox extends React.Component {
         super(props)
         this.state = {
             text: '',
-            author: '', 
+            author: '',
             quotes: []
         }
         this.getQuote = this.getQuote.bind(this);
@@ -16,7 +16,14 @@ export default class QuoteBox extends React.Component {
     componentDidMount = () => {
         fetch("https://type.fit/api/quotes")
             .then(resp => resp.json())
-            .then(quotes => this.setState({ quotes }))
+            .then(quotes => {
+                let randomQuote = quotes[Math.floor(Math.random() * 1644)]
+                this.setState({
+                    quotes,
+                    author: randomQuote.author,
+                    text: randomQuote.text
+                })
+            })
     }
 
 
