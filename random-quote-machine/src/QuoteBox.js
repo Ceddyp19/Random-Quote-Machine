@@ -34,30 +34,16 @@ export default class QuoteBox extends React.Component {
             author: randomQuote.author,
             text: randomQuote.text
         })
-
-        // var randomQuote = {};
-        // fetch("https://type.fit/api/quotes")
-        //     .then(function (response) {
-        //         return response.json();
-        //     })
-        //     .then(function (data) {
-        //         // console.log(data);
-        //         randomQuote = data[Math.floor(Math.random() * 1644)]
-        //         console.log('random', randomQuote.author)
-        //         this.state.text = randomQuote.text;
-        //         this.state.author = randomQuote.author;
-        //     });
-        // console.log(this.state.quotes)
-        // this.setState({ text: randomQuote.text, author: randomQuote.author })
-        // console.log('quote', this.state.text, this.state.author)
     }
 
 
     render() {
         return (
-            <div id='quote-box' style={{ backgroundColor: 'red', display: 'inline-block' }}>
+            <div  className='row align-items-center' id='quote-box' >
                 <QuoteGenerator getQuote={this.getQuote} author={this.state.author} text={this.state.text} />
             </div>
         )
     }
 }
+
+// style={{ backgroundColor: 'red', display: 'inline-block' }}
