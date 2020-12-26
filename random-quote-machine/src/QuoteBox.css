@@ -1,3 +1,25 @@
 #quote-box{
     background-color: blue;
+    border: 3px solid black;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    border-radius: 3px;
+    position: relative;
+    width: 650px;
+    padding: 40px 50px;
+}
+
+#author{
+    position: relative;
+    left: 35%;
+}
+
+#tweet-quote{
+    float: left;
+}
+
+#new-quote{
+    float: right;
+    font-size: x-large;
 }
