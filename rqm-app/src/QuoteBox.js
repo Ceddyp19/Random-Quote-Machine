@@ -1,7 +1,7 @@
 import React from 'react';
 import './QuoteBox.css'
 import QuoteGenerator from './QuoteGenerator';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default class QuoteBox extends React.Component {
     constructor(props) {
