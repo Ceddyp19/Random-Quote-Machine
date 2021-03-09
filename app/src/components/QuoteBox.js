@@ -1,5 +1,5 @@
 import React from 'react';
-import './QuoteBox.css'
+import '../css/QuoteBox.css'
 import QuoteGenerator from './QuoteGenerator';
 
 
@@ -31,6 +31,10 @@ export default class QuoteBox extends React.Component {
     getQuote() {
         let quotes = this.state.quotes
         let randomQuote = quotes[Math.floor(Math.random() * 1644)]
+        if (randomQuote.author === null) {
+            randomQuote.author = 'Unknown'
+        }
+
         this.setState({
             author: randomQuote.author,
             text: randomQuote.text
