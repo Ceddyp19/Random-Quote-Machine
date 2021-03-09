@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body{
+  /* background-color: black; */
+  background-image: url('background.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+/* <span>Photo by <a href="https://unsplash.com/@thanunburanapong?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thanun Buranapong</a> on <a href="https://unsplash.com/s/photos/city-at-night?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
+}
